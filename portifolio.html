@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RainbowScripts | Portfolio</title>
+
+<style>
+    *{ margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI",sans-serif; }
+    html{ scroll-behavior:smooth; }
+    body{ background:#090b15; color:white; overflow-x:hidden; }
+
+    /* Background Effects */
+    body::before{ content:""; position:fixed; inset:0; z-index:-2; background:radial-gradient(circle at 15% 15%, #ff0055 0%, transparent 25%), radial-gradient(circle at 85% 15%, #00ffff 0%, transparent 25%), radial-gradient(circle at 50% 80%, #00ff88 0%, transparent 25%); filter:blur(150px); opacity:.4; }
+    body::after{ content:""; position:fixed; inset:0; background:rgba(8,10,20,.8); backdrop-filter:blur(20px); z-index:-1; }
+
+    /* Nav */
+    nav{ position:fixed; top:20px; left:50%; transform:translateX(-50%); width:min(1150px,95%); padding:15px 30px; display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,.05); backdrop-filter:blur(25px); border:1px solid rgba(255,255,255,.1); border-radius:50px; z-index:1000; }
+    .logo{ display:flex; align-items:center; gap:12px; }
+    .logo img{ width:38px; height:38px; border-radius:50%; border:2px solid rgba(255,255,255,.1); }
+    .logo span{ font-size:1.4rem; font-weight:700; background:linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, violet); -webkit-background-clip:text; color:transparent; }
+    .nav-links a{ color:white; text-decoration:none; margin-left:25px; opacity:.7; transition:.3s; }
+    .nav-links a:hover{ opacity:1; }
+
+    /* Sections */
+    .hero{ min-height:60vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:100px 20px; }
+    h1{ font-size:4rem; margin-bottom:20px; background:linear-gradient(90deg, #ff0055, #00ffff); -webkit-background-clip:text; color:transparent; }
+    .section{ padding:80px 8%; }
+    .section-title{ text-align:center; font-size:2.5rem; margin-bottom:50px; }
+    
+    /* Work Grid */
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
+    .work-card{ background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.1); border-radius:20px; padding:30px; transition:.3s; }
+    .work-card:hover{ border-color:rgba(255,255,255,.3); transform:translateY(-10px); background:rgba(255,255,255,.06); }
+    .work-card h3{ margin-bottom:15px; color:#00ffff; }
+    
+    footer{ text-align:center; opacity:.5; padding:40px; }
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-29E625BCD9F2C4CCCF2A2BD603C72A80-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="Logo">
+        <span>RainbowScripts</span>
+    </div>
+    <div class="nav-links">
+        <a href="#work">My Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to my portfolio</h1>
+    <p>Showcasing custom Roblox scripts, exploits, and technical automation projects.</p>
+</section>
+
+<section id="work" class="section">
+    <h2 class="section-title">My Work</h2>
+    <div class="grid">
+        <!-- Copy this block to add more projects -->
+        <div class="work-card">
+            <h3>This Is A Place Holder</h3>
+            <p>Hello</p>
+        </div>
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <div style="text-align:center; background:rgba(255,255,255,.03); padding:30px; border-radius:20px; border:1px solid rgba(255,255,255,.1); max-width:400px; margin:auto;">
+        <p><strong>Discord:</strong> baconroasterv2_ (for now)</p>
+        <p><strong>Roblox:</strong> ralnbowscripts</p>
+<p><strong>Youtube:</strong> <a href="https://www.youtube.com/@KattationMC" target="_blank" rel="noopener noreferrer">Click Me</a></p>    </div>
+</section>
+
+<footer>
+    © 2026 RainbowScripts
+</footer>
+
+</body>
+</html>
